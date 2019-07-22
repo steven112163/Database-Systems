@@ -10,11 +10,11 @@ This project is a simple DBMS implemented using C, as the education material of 
 * gtest >= 1.8.1
 * python >= 3.6.0
 
-## Unit test
+## Unit Test
 
 `$ make check`
 
-## System test
+## System Test
 
 `$ python3 test/system/system_test.py ./shell [test_case..]`
 
@@ -31,7 +31,7 @@ This project is a simple DBMS implemented using C, as the education material of 
 
 ***The current table schema is hard coded, the schema in the [include/User.h](include/User.h), you can check the User_t to get the detail of each field.***
 
-### Table schema
+### Table Schema
 #### `User` table
 | field_name | data_type |
 |---|---|
@@ -40,28 +40,28 @@ This project is a simple DBMS implemented using C, as the education material of 
 | email | char[255] |
 | age | int |
 
-### Supported command
+### Supported Command
 | Command | Description |
 |---|---| 
-| insert | The insert command only allow insert one `User_t` record at a time |
-| select | The select command will only print out all the `User_t` records in the current databases |
+| insert | Only allows inserting one `User_t` record at a time |
+| select | Only prints out all the `User_t` records in the current database |
 
-### Command format
+### Command Format
 | Command | Format | Description |
 |---|---|---|
 | insert | insert <id> <name> <email> <age> | insert a user with id, name, email and age |
 | select | select {field} from table [offset <offset_num>] [limit <limit_num>] | select specified field from table starting from offset and up to limit rows |
 
-## Storage mode
+## Storage Mode
 
-### Memory only
+### Memory Only
 
 The memory only will not store any record after the process terminate
 
 #### Usage:
 `$ ./shell`
 
-### File mode
+### File Mode
 
 The File mode will store the record into the specify \<DB file\>, the
 next execute can automatically reload the record by the same
