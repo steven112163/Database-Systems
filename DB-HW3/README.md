@@ -52,7 +52,7 @@ This project is a simple DBMS implemented using C, as the education material of 
 | Command | Format | Description |
 |---|---|---|
 | insert | insert <id> <name> <email> <age> | Insert a user with id, name, email and age |
-| select | select {field} from table [where <conditions>] [offset <offset_num>] [limit <limit_num>] | Select specified field of required tuples from table starting from offset and up to limit rows |
+| select | select <field> from <table1> [join <table2> on <field in table1> = <field in table2>] [where <conditions>] [offset <offset_num>] [limit <limit_num>] | Select required tuples from current database starting from offset and up to limit rows |
 | update | update table set { <field> = <content> } [where <conditions>] | Update specified field of required tuples |
 | delete | delete from table [where <conditions>] | Delete specified tuples |
 

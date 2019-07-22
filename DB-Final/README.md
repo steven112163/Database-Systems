@@ -40,11 +40,22 @@ This project is a simple DBMS implemented using C, as the education material of 
 | email | char[255] |
 | age | int |
 
-### Supported command
+### Supported Command
 | Command | Description |
 |---|---| 
-| insert | The insert command only allow insert one `User_t` record at a time |
-| select | The select command will only print out all the `User_t` records in the current databases |
+| insert | Only allows inserting one `User_t` record at a time |
+| select | Print out the `User_t` records in specified format in the current database |
+| update | Update tuples in the user table |
+| delete | Delete tuples in the user table |
+
+### Command Format
+| Command | Format | Description |
+|---|---|---|
+| insert | insert into user <id> <name> <email> <age> | Insert a user with id, name, email and age |
+| insert | insert into like <id1> <id2> | Insert a like with id1 and id2 |
+| select | select {field} from table [where <conditions>] [offset <offset_num>] [limit <limit_num>] | Select specified field of required tuples from table starting from offset and up to limit rows |
+| update | update user set { <field> = <content> } [where <conditions>] | Update specified field of required tuples only in user table |
+| delete | delete from user [where <conditions>] | Delete specified tuples only in user table|
 
 
 ## Storage mode
