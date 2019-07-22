@@ -43,14 +43,14 @@ This project is a simple DBMS implemented using C, as the education material of 
 ### Supported Command
 | Command | Description |
 |---|---| 
-| insert | Only allows inserting one `User_t` record at a time |
-| select | Only prints out all the `User_t` records in the current database |
+| insert | Only allow inserting one `User_t` record at a time |
+| select | Only print out all the `User_t` records in the current database |
 
 ### Command Format
 | Command | Format | Description |
 |---|---|---|
-| insert | insert <id> <name> <email> <age> | insert a user with id, name, email and age |
-| select | select {field} from table [offset <offset_num>] [limit <limit_num>] | select specified field from table starting from offset and up to limit rows |
+| insert | insert <id> <name> <email> <age> | Insert a user with id, name, email and age |
+| select | select {field} from table [offset <offset_num>] [limit <limit_num>] | Select specified field from table starting from offset and up to limit rows |
 
 ## Storage Mode
 
