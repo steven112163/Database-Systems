@@ -49,8 +49,8 @@ This project is a simple DBMS implemented using C, as the education material of 
 ### Command Format
 | Command | Format | Description |
 |---|---|---|
-| insert | insert <id> <name> <email> <age> | Insert a user with id, name, email and age |
-| select | select {field} from table [offset <offset_num>] [limit <limit_num>] | Select specified field from table starting from offset and up to limit rows |
+| insert | `insert <id> <name> <email> <age>` | Insert a user with id, name, email and age |
+| select | `select {field} from table [offset <offset_num>] [limit <limit_num>]` | Select specified field from table starting from offset and up to limit rows |
 
 ## Storage Mode
 

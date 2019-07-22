@@ -51,11 +51,11 @@ This project is a simple DBMS implemented using C, as the education material of 
 ### Command Format
 | Command | Format | Description |
 |---|---|---|
-| insert | insert into user <id> <name> <email> <age> | Insert a user with id, name, email and age |
-| insert | insert into like <id1> <id2> | Insert a like with id1 and id2 |
-| select | select {field} from table [where <conditions>] [offset <offset_num>] [limit <limit_num>] | Select specified field of required tuples from table starting from offset and up to limit rows |
-| update | update user set { <field> = <content> } [where <conditions>] | Update specified field of required tuples only in user table |
-| delete | delete from user [where <conditions>] | Delete specified tuples only in user table|
+| insert | `insert into user <id> <name> <email> <age>` | Insert a user with id, name, email and age |
+| insert | `insert into like <id1> <id2>` | Insert a like with id1 and id2 |
+| select | `select {field} from table [where <conditions>] [offset <offset_num>] [limit <limit_num>]` | Select specified field of required tuples from table starting from offset and up to limit rows |
+| update | `update user set { <field> = <content> } [where <conditions>]` | Update specified field of required tuples only in user table |
+| delete | `delete from user [where <conditions>]` | Delete specified tuples only in user table|
 
 
 ## Storage mode
