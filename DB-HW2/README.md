@@ -40,7 +40,7 @@ This project is a simple DBMS implemented using C, as the education material of 
 | email | char[255] |
 | age | int |
 
-### Supported Command
+### Support Command
 | Command | Description |
 |---|---| 
 | insert | Only allow inserting one `User_t` record at a time |
