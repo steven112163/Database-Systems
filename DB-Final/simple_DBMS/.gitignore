@@ -1,0 +1,23 @@
+# For python cache
+**/*__pycache__
+
+# For c object file
+**/*.o
+
+# For output binary
+shell
+
+# For system test output
+test/system/output/*
+*.json
+*.exe
+*.json
+result.json
+result.json
+*.json
+*.bin
+*.xml
+*.ipch
+*.json
+*.iml
+shell.exe.stackdump
